@@ -1,33 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import { Alert, StyleSheet, Text, View } from 'react-native';
-import Login from './app/screens/Login';
 import Header from './app/components/Header';
-import Boton from './app/components/Boton';
-import Fontisto from '@expo/vector-icons/Fontisto';
+import Calculadora1 from './app/screens/Calculadora1';
+import Footer from './app/components/Footer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <Header Titulo='Calculadora' 
-      nombre='Luis Alberto Mendoza San Juan'
-      imagen={require('./assets/guero.png')} />
+      <Header Titulo='Calculadora basica'
+      nombre='MTI. Luis Alberto Mendoza '
+      imagen={require('./assets/myAvatar.png')}/>
 
-      <Header Titulo='Agenda fiscal' 
-      nombre='Juan Carlos Rivera'
-      imagen={require('./assets/otaku.png')}
-      color='#3F704D'/>
+      <Calculadora1/>
 
-      <Boton titulo='Hola' 
-      onPress={()=>{Alert.alert('Hola soy un boton')}}
-      icono={<Fontisto name="coffeescript" size={24} color="white"/>}
-      posicionIcono='Derecha'/>
-
-      <Boton titulo='Segundo' variante='Peligro' disable={true}
-      onPress={()=>{Alert.alert('Hola soy otro boton')}}
-      icono={<Fontisto name='ubuntu' size={24} color={'white'}/>}/>
-
-      <StatusBar style="auto" />
+      <Footer Gruppo='5"A"' Fecha='18/02/2025'/>
+      
     </View>
   );
 }
@@ -47,6 +33,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: coffeePalette.background,
     alignItems: 'stretch',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
 });
