@@ -2,6 +2,7 @@ import { Alert, StyleSheet, Text, View } from 'react-native';
 import Header from './app/components/Header';
 import Calculadora1 from './app/screens/Calculadora1';
 import Footer from './app/components/Footer';
+import CafeFlat from './app/screens/CafeFlat';
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
       nombre='MTI. Luis Alberto Mendoza '
       imagen={require('./assets/myAvatar.png')}/>
 
-      <Calculadora1/>
+      <CafeFlat/>
 
       <Footer Gruppo='5"A"' Fecha='18/02/2025'/>
       
