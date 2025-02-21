@@ -172,7 +172,7 @@ const CafeFlat = () => {
       <Text>CafeFlat</Text>
       <FlatList
       data={Data}
-      renderItem={(item)=><Item descripcion='hola'/>}
+      renderItem={({item})=><Item descripcion={item.descripcion}/>}
       keyExtractor={item=>item.id}/>
     </View>
   )
