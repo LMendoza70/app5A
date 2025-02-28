@@ -5,6 +5,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import Feather from '@expo/vector-icons/Feather';
 import Caja from '../components/Caja'
 import Boton from '../components/Boton';
+import { Link } from 'expo-router';
 
 
 
@@ -63,6 +64,9 @@ const Calculadora1 = () => {
 
       <Text>El resultado de la operacion es : {res} </Text>
       <Text>Valor 1 : {Valor1} , Valor 2 : {Valor2}</Text>
+      <Link href={'../index'}>
+      regresar...
+      </Link>
 
     </View>
   )
