@@ -64,7 +64,7 @@ const Calculadora1 = () => {
 
       <Text>El resultado de la operacion es : {res} </Text>
       <Text>Valor 1 : {Valor1} , Valor 2 : {Valor2}</Text>
-      <Link href={'../index'}>
+      <Link href={'../'}>
       regresar...
       </Link>
 

@@ -10,6 +10,12 @@ const index = () => {
       <Link href={'./screens/Calculadora1'}>
         Practica Calculadora...
       </Link>
+      <Link href={'./(stack)/'}>
+        pasa de navegacion simple a stack
+      </Link>
+      <Link href={'./(tabs)/'}>
+        pasa de navegacion simple a tabs
+      </Link>
     </View>
   )
 }
